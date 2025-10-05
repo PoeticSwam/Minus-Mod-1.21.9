@@ -2,6 +2,7 @@ package net.poeticswam.minusmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.poeticswam.minusmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +12,6 @@ public class MinusMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+        ModItems.registerModItems();
     }
 }
