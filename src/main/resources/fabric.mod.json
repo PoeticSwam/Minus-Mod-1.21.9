@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "minusmod",
+	"version": "${version}",
+	"name": "Minus Mod",
+	"description": "Bringing Minecraftia to your own world!",
+	"authors": [
+		"PoeticSwam"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/@PoeticSwam",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/minusmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.poeticswam.minusmod.MinusMod"
+		],
+		"fabric-datagen": [
+			"net.poeticswam.minusmod.MinusModDataGenerator"
+		],
+        "client": [
+            "net.poeticswam.minusmod.MinusModClient"
+        ]
+	},
+	"mixins": [
+		"minusmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
