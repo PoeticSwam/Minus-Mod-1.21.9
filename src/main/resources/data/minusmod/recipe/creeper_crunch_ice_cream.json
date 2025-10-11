@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "group": "creeper_crunch_ice_cream",
+  "ingredients": [
+    "minecraft:snowball",
+    "minecraft:stick",
+    "minecraft:gunpowder",
+    "minecraft:lime_dye"
+],
+  "result": {
+    "count": 1,
+    "id": "minusmod:creeper_crunch_ice_cream"
+  }
+}
