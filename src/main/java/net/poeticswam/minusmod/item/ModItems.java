@@ -14,6 +14,8 @@ public class ModItems {
 
     public static final Item CREEPER_CRUNCH_ICE_CREAM = registerItem("creeper_crunch_ice_cream", new Item(new Item.Settings().food(ModFoodComponents.CREEPER_CRUNCH_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"creeper_crunch_ice_cream")))));
     public static final Item GHAST_TEAR_SWIRL_ICE_CREAM = registerItem("ghast_tear_swirl_ice_cream", new Item(new Item.Settings().food(ModFoodComponents.GHAST_TEAR_SWIRL_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"ghast_tear_swirl_ice_cream")))));
+    public static final Item MAGMA_CREAM_RIPPLE_ICE_CREAM = registerItem("magma_cream_ripple_ice_cream", new Item(new Item.Settings().food(ModFoodComponents.MAGMA_CREAM_RIPPLE_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"magma_cream_ripple_ice_cream")))));
+    public static final Item DIAMOND_ORE_CHUNK_ICE_CREAM = registerItem("diamond_ore_chunk_ice_cream", new Item(new Item.Settings().food(ModFoodComponents.DIAMOND_ORE_CHUNK_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"diamond_ore_chunk_ice_cream")))));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MinusMod.MOD_ID, name), item);
@@ -24,6 +26,9 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(CREEPER_CRUNCH_ICE_CREAM);
+            entries.add(GHAST_TEAR_SWIRL_ICE_CREAM);
+            entries.add(MAGMA_CREAM_RIPPLE_ICE_CREAM);
+            entries.add(DIAMOND_ORE_CHUNK_ICE_CREAM);
         });
 
     }
