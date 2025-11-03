@@ -3,6 +3,10 @@
   "item.minusmod.ghast_tear_swirl_ice_cream": "Ghast Tear Swirl Ice Cream",
   "item.minusmod.magma_cream_ripple_ice_cream": "Magma Cream Ripple Ice Cream",
   "item.minusmod.diamond_ore_chunk_ice_cream": "Diamond Ore Chunk Ice Cream",
+  "item.minusmod.potion.effect.monster_master_cologne": "Monster Master Breath Perfume",
+  "item.minusmod.splash_potion.effect.monster_master_cologne": "Monster Master Cologne",
+  "item.minusmod.lingering_potion.effect.monster_master_cologne": "Lingering Monster Master Cologne",
+  "item.minusmod.tipped_arrow.effect.monster_master_cologne": "Monster Master Cologne Arrow",
 
   "effect.minusmod.cologne": "Cologne"
 }
