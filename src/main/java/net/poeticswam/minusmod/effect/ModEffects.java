@@ -14,7 +14,7 @@ public class ModEffects {
     public static final RegistryEntry<StatusEffect> COLOGNE = registerStatusEffect("cologne",
             new CologneEffect(StatusEffectCategory.NEUTRAL, 0x4a0033)
                     .addAttributeModifier(EntityAttributes.LUCK,
-                            Identifier.of(MinusMod.MOD_ID, "cologne"), 300,
+                            Identifier.of(MinusMod.MOD_ID, "cologne"),3,
                             EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL));
 
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect statusEffect) {
