@@ -7,6 +7,22 @@
   "item.minecraft.splash_potion.effect.monster_master_cologne": "Monster Master Cologne",
   "item.minecraft.lingering_potion.effect.monster_master_cologne": "Lingering Monster Master Cologne",
   "item.minecraft.tipped_arrow.effect.monster_master_cologne": "Arrow of Monster Master",
+  "item.minusmod.black_colored_egg": "Black Colored Egg",
+  "item.minusmod.blue_colored_egg": "Blue Colored Egg",
+  "item.minusmod.brown_colored_egg": "Brown Colored Egg",
+  "item.minusmod.cyan_colored_egg": "Cyan Colored Egg",
+  "item.minusmod.gray_colored_egg": "Gray Colored Egg",
+  "item.minusmod.green_colored_egg": "Green Colored Egg",
+  "item.minusmod.light_blue_colored_egg": "Light Blue Colored Egg",
+  "item.minusmod.light_gray_colored_egg": "Light Gray Colored Egg",
+  "item.minusmod.lime_colored_egg": "Lime Colored Egg",
+  "item.minusmod.magenta_colored_egg": "Magenta Colored Egg",
+  "item.minusmod.orange_colored_egg": "Orange Colored Egg",
+  "item.minusmod.pink_colored_egg": "Pink Colored Egg",
+  "item.minusmod.purple_colored_egg": "Purple Colored Egg",
+  "item.minusmod.red_colored_egg": "Red Colored Egg",
+  "item.minusmod.white_colored_egg": "White Colored Egg",
+  "item.minusmod.yellow_colored_egg": "Yellow Colored Egg",
 
   "effect.minusmod.cologne": "Cologne"
 }

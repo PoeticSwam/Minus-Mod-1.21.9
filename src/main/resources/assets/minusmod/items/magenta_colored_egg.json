@@ -1,6 +1,6 @@
 {
   "model": {
     "type" : "minecraft:model",
-    "model": "minusmod:item/colored_egg"
+    "model": "minusmod:item/magenta_colored_egg"
   }
 }

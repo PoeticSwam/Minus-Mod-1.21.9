@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minusmod:item/cyan_colored_egg"
+  }
+}
+
