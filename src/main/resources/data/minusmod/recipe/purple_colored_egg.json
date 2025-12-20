@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "group": "colored_egg",
+  "ingredients": [
+    "minecraft:egg",
+    "minecraft:purple_dye"
+],
+  "result": {
+    "count": 1,
+    "id": "minusmod:purple_colored_egg"
+  }
+}

@@ -39,7 +39,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        MinusMod.LOGGER.info("Registering Mod Items for" + MinusMod.MOD_ID);
+        MinusMod.LOGGER.info("Registering Mod Items for " + MinusMod.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
             entries.add(CREEPER_CRUNCH_ICE_CREAM);

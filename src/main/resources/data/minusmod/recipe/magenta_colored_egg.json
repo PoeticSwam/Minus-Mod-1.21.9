@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "group": "colored_egg",
+  "ingredients": [
+    "minecraft:egg",
+    "minecraft:magenta_dye"
+],
+  "result": {
+    "count": 1,
+    "id": "minusmod:magenta_colored_egg"
+  }
+}

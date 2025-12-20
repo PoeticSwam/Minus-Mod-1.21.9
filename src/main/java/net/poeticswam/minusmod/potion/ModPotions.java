@@ -19,6 +19,6 @@ public class ModPotions {
     }
 
     public static void registerPotions() {
-        MinusMod.LOGGER.info("Registering Mod Potions for" + MinusMod.MOD_ID);
+        MinusMod.LOGGER.info("Registering Mod Potions for " + MinusMod.MOD_ID);
     }
 }
