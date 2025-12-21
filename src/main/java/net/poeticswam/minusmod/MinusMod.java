@@ -11,6 +11,8 @@ import net.poeticswam.minusmod.item.ModItems;
 import net.poeticswam.minusmod.potion.ModPotions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 
 public class MinusMod implements ModInitializer {
 	public static final String MOD_ID = "minusmod";
@@ -21,8 +23,8 @@ public class MinusMod implements ModInitializer {
         ModItems.registerModItems();
         ModEffects.registerEffects();
         ModPotions.registerPotions();
-        FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
-            builder.registerPotionRecipe(Potions.MUNDANE, Items.SLIME_BALL, ModPotions.MONSTER_MASTER_COLOGNE);
-        });
+        FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> builder.registerPotionRecipe(Potions.MUNDANE, Items.SLIME_BALL, ModPotions.MONSTER_MASTER_COLOGNE));
+        FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(mod -> ServerLifecycleEvents.SERVER_STARTING.register(server -> LOGGER.info("MinusMod dev data pack should now be loaded")));
+
     }
 }
