@@ -17,6 +17,10 @@ public class ModItems {
     public static final Item GHAST_TEAR_SWIRL_ICE_CREAM = registerItem("ghast_tear_swirl_ice_cream", new Item(new Item.Settings().food(ModFoodComponents.GHAST_TEAR_SWIRL_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"ghast_tear_swirl_ice_cream")))));
     public static final Item MAGMA_CREAM_RIPPLE_ICE_CREAM = registerItem("magma_cream_ripple_ice_cream", new Item(new Item.Settings().food(ModFoodComponents.MAGMA_CREAM_RIPPLE_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"magma_cream_ripple_ice_cream")))));
     public static final Item DIAMOND_ORE_CHUNK_ICE_CREAM = registerItem("diamond_ore_chunk_ice_cream", new Item(new Item.Settings().food(ModFoodComponents.DIAMOND_ORE_CHUNK_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"diamond_ore_chunk_ice_cream")))));
+    public static final Item FERMENTED_POTATO = registerItem("fermented_potato", new Item(new Item.Settings().food(ModFoodComponents.FERMENTED_POTATO).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"fermented_potato")))));
+    public static final Item GRASS_STEW = registerItem("grass_stew", new CustomStewItem(new Item.Settings().maxCount(1).food(ModFoodComponents.GRASS_STEW).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"grass_stew")))));
+
+
     public static final Item BLACK_COLORED_EGG = registerItem("black_colored_egg", new EggItem(new Item.Settings().maxCount(16).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"black_colored_egg")))));
     public static final Item BLUE_COLORED_EGG = registerItem("blue_colored_egg", new EggItem(new Item.Settings().maxCount(16).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"blue_colored_egg")))));
     public static final Item BROWN_COLORED_EGG = registerItem("brown_colored_egg", new EggItem(new Item.Settings().maxCount(16).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"brown_colored_egg")))));
@@ -34,6 +38,8 @@ public class ModItems {
     public static final Item WHITE_COLORED_EGG = registerItem("white_colored_egg", new EggItem(new Item.Settings().maxCount(16).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"white_colored_egg")))));
     public static final Item YELLOW_COLORED_EGG = registerItem("yellow_colored_egg", new EggItem(new Item.Settings().maxCount(16).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"yellow_colored_egg")))));
 
+    public static final Item FERMENTED_GLOWSTONE_DUST = registerItem("fermented_glowstone_dust", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"fermented_glowstone_dust")))));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MinusMod.MOD_ID, name), item);
     }
@@ -46,6 +52,8 @@ public class ModItems {
             entries.add(GHAST_TEAR_SWIRL_ICE_CREAM);
             entries.add(MAGMA_CREAM_RIPPLE_ICE_CREAM);
             entries.add(DIAMOND_ORE_CHUNK_ICE_CREAM);
+            entries.add(FERMENTED_POTATO);
+            entries.add(GRASS_STEW);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
@@ -65,6 +73,7 @@ public class ModItems {
             entries.add(RED_COLORED_EGG);
             entries.add(WHITE_COLORED_EGG);
             entries.add(YELLOW_COLORED_EGG);
+            entries.add(FERMENTED_GLOWSTONE_DUST);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {

@@ -24,6 +24,7 @@ public class MinusMod implements ModInitializer {
         ModEffects.registerEffects();
         ModPotions.registerPotions();
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> builder.registerPotionRecipe(Potions.MUNDANE, Items.SLIME_BALL, ModPotions.MONSTER_MASTER_COLOGNE));
+        FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> builder.registerPotionRecipe(Potions.LEAPING, ModItems.FERMENTED_GLOWSTONE_DUST, ModPotions.ROCKET_POTION));
         FabricLoader.getInstance().getModContainer(MOD_ID).ifPresent(mod -> ServerLifecycleEvents.SERVER_STARTING.register(server -> LOGGER.info("MinusMod dev data pack should now be loaded")));
 
     }

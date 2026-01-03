@@ -14,6 +14,9 @@ public class ModPotions {
     public static final RegistryEntry<Potion> MONSTER_MASTER_COLOGNE = registerPotion("monster_master_cologne",
             new Potion("monster_master_cologne", new StatusEffectInstance(ModEffects.COLOGNE, 1200, 0)));
 
+    public static final RegistryEntry<Potion> ROCKET_POTION = registerPotion("rocket_potion",
+            new Potion("rocket_potion", new StatusEffectInstance(ModEffects.ROCKET, 160, 0)));
+
     private static RegistryEntry<Potion> registerPotion(String name, Potion potion) {
         return Registry.registerReference(Registries.POTION, Identifier.of(MinusMod.MOD_ID, name), potion);
     }

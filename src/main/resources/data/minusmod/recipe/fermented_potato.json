@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "ingredients",
+  "ingredients": [
+    "minecraft:potato",
+    "minecraft:slime_ball"
+],
+  "result": {
+    "count": 1,
+    "id": "minusmod:fermented_potato"
+  }
+}

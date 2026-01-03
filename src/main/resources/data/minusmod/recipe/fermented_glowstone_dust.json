@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    "minecraft:glowstone_dust",
+    "minecraft:slime_ball"
+],
+  "result": {
+    "count": 1,
+    "id": "minusmod:fermented_glowstone_dust"
+  }
+}
