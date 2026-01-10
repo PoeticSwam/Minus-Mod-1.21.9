@@ -1,14 +1,12 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "food",
-  "group": "grass_stew",
   "ingredients": [
     "minecraft:bowl",
-    "minecraft:tall_grass",
-    "minecraft:tall_grass"
+    "minecraft:mud"
 ],
   "result": {
     "count": 1,
-    "id": "minusmod:grass_stew"
+    "id": "minusmod:mud_soup"
   }
 }

@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "food",
+  "group": "grass_stew",
   "ingredients": [
     "minecraft:bowl",
     "minecraft:short_grass",

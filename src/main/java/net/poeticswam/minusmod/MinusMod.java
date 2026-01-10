@@ -3,7 +3,6 @@ package net.poeticswam.minusmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
-import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
 import net.poeticswam.minusmod.effect.ModEffects;
