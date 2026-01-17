@@ -23,6 +23,9 @@ public class ModItems {
     public static final Item COARSE_DIRT_STEW = registerItem("coarse_dirt_stew", new CustomStewItem(new Item.Settings().maxCount(1).food(ModFoodComponents.COARSE_DIRT_STEW).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"coarse_dirt_stew")))));
     public static final Item GRAVEL_SANDWICH = registerItem("gravel_sandwich", new Item(new Item.Settings().food(ModFoodComponents.GRAVEL_SANDWICH).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"gravel_sandwich")))));
 
+    public static final Item SPIDER_LEG = registerItem("spider_leg", new Item(new Item.Settings().food(ModFoodComponents.SPIDER_LEG).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"spider_leg")))));
+    public static final Item COOKED_SPIDER_LEG = registerItem("cooked_spider_leg", new Item(new Item.Settings().food(ModFoodComponents.COOKED_SPIDER_LEG).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"cooked_spider_leg")))));
+
     public static final Item BLACK_COLORED_EGG = registerItem("black_colored_egg", new EggItem(new Item.Settings().maxCount(16).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"black_colored_egg")))));
     public static final Item BLUE_COLORED_EGG = registerItem("blue_colored_egg", new EggItem(new Item.Settings().maxCount(16).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"blue_colored_egg")))));
     public static final Item BROWN_COLORED_EGG = registerItem("brown_colored_egg", new EggItem(new Item.Settings().maxCount(16).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"brown_colored_egg")))));
@@ -60,6 +63,8 @@ public class ModItems {
             entries.add(MUD_SOUP);
             entries.add(COARSE_DIRT_STEW);
             entries.add(GRAVEL_SANDWICH);
+            entries.add(SPIDER_LEG);
+            entries.add(COOKED_SPIDER_LEG);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {

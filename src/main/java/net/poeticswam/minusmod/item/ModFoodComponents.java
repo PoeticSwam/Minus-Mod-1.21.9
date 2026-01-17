@@ -12,4 +12,6 @@ public class ModFoodComponents {
     public static final FoodComponent MUD_SOUP = new FoodComponent.Builder().nutrition(1).saturationModifier(1F).build();
     public static final FoodComponent COARSE_DIRT_STEW = new FoodComponent.Builder().nutrition(1).saturationModifier(2.4F).build();
     public static final FoodComponent GRAVEL_SANDWICH = new FoodComponent.Builder().nutrition(4).saturationModifier(6.4F).build();
+    public static final FoodComponent SPIDER_LEG = new FoodComponent.Builder().nutrition(2).saturationModifier(2F).build();
+    public static final FoodComponent COOKED_SPIDER_LEG = new FoodComponent.Builder().nutrition(5).saturationModifier(7F).build();
 }
