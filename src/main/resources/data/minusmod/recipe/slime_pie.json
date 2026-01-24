@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    "minecraft:slime_ball",
+    "minecraft:sugar",
+    "#minusmod:all_eggs"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minusmod:slime_pie"
+  }
+}
