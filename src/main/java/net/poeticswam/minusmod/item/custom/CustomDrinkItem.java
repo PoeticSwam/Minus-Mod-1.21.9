@@ -1,4 +1,4 @@
-package net.poeticswam.minusmod.item;
+package net.poeticswam.minusmod.item.custom;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -7,9 +7,9 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.world.World;
 
-public class CustomStewItem extends Item {
+public class CustomDrinkItem extends Item {
 
-    public CustomStewItem(Settings settings) {
+    public CustomDrinkItem(Settings settings) {
         super(settings);
     }
 
@@ -18,7 +18,11 @@ public class CustomStewItem extends Item {
         super.finishUsing(stack, world, user);
 
         if (user instanceof PlayerEntity player && !player.getAbilities().creativeMode) {
-            return new ItemStack(Items.BOWL);
+            ItemStack bottle = new ItemStack(Items.GLASS_BOTTLE);
+
+            if (!player.getInventory().insertStack(bottle)) {
+                player.dropItem(bottle, false);
+            }
         }
 
         return stack;
