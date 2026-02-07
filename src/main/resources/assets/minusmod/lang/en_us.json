@@ -42,5 +42,7 @@
   "item.minecraft.splash_potion.effect.rocket_potion": "Splash Potion of Rocket",
   "item.minecraft.lingering_potion.effect.rocket_potion": "Lingering Potion of Rocket",
   "item.minecraft.tipped_arrow.effect.rocket_potion": "Arrow of Rocket",
-  "effect.minusmod.rocket": "Rocket"
+  "effect.minusmod.rocket": "Rocket",
+
+  "item.minusmod.sugar_block": "Sugar Block"
 }

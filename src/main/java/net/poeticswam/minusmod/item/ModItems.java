@@ -11,14 +11,15 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.poeticswam.minusmod.MinusMod;
 import net.poeticswam.minusmod.item.custom.CustomDrinkItem;
+import net.poeticswam.minusmod.item.custom.CustomIceCreamItem;
 import net.poeticswam.minusmod.item.custom.CustomStewItem;
 
 public class ModItems {
 
-    public static final Item CREEPER_CRUNCH_ICE_CREAM = registerItem("creeper_crunch_ice_cream", new Item(new Item.Settings().food(ModFoodComponents.CREEPER_CRUNCH_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"creeper_crunch_ice_cream")))));
-    public static final Item GHAST_TEAR_SWIRL_ICE_CREAM = registerItem("ghast_tear_swirl_ice_cream", new Item(new Item.Settings().food(ModFoodComponents.GHAST_TEAR_SWIRL_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"ghast_tear_swirl_ice_cream")))));
-    public static final Item MAGMA_CREAM_RIPPLE_ICE_CREAM = registerItem("magma_cream_ripple_ice_cream", new Item(new Item.Settings().food(ModFoodComponents.MAGMA_CREAM_RIPPLE_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"magma_cream_ripple_ice_cream")))));
-    public static final Item DIAMOND_ORE_CHUNK_ICE_CREAM = registerItem("diamond_ore_chunk_ice_cream", new Item(new Item.Settings().food(ModFoodComponents.DIAMOND_ORE_CHUNK_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"diamond_ore_chunk_ice_cream")))));
+    public static final Item CREEPER_CRUNCH_ICE_CREAM = registerItem("creeper_crunch_ice_cream", new CustomIceCreamItem(new Item.Settings().food(ModFoodComponents.CREEPER_CRUNCH_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"creeper_crunch_ice_cream")))));
+    public static final Item GHAST_TEAR_SWIRL_ICE_CREAM = registerItem("ghast_tear_swirl_ice_cream", new CustomIceCreamItem(new Item.Settings().food(ModFoodComponents.GHAST_TEAR_SWIRL_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"ghast_tear_swirl_ice_cream")))));
+    public static final Item MAGMA_CREAM_RIPPLE_ICE_CREAM = registerItem("magma_cream_ripple_ice_cream", new CustomIceCreamItem(new Item.Settings().food(ModFoodComponents.MAGMA_CREAM_RIPPLE_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"magma_cream_ripple_ice_cream")))));
+    public static final Item DIAMOND_ORE_CHUNK_ICE_CREAM = registerItem("diamond_ore_chunk_ice_cream", new CustomIceCreamItem(new Item.Settings().food(ModFoodComponents.DIAMOND_ORE_CHUNK_ICE_CREAM).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"diamond_ore_chunk_ice_cream")))));
     public static final Item FERMENTED_POTATO = registerItem("fermented_potato", new Item(new Item.Settings().food(ModFoodComponents.FERMENTED_POTATO).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"fermented_potato")))));
     public static final Item GRASS_STEW = registerItem("grass_stew", new CustomStewItem(new Item.Settings().maxCount(1).food(ModFoodComponents.GRASS_STEW).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"grass_stew")))));
     public static final Item MUD_SOUP = registerItem("mud_soup", new CustomStewItem(new Item.Settings().maxCount(1).food(ModFoodComponents.MUD_SOUP).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"mud_soup")))));

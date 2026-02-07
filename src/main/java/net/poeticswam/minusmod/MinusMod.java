@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potions;
+import net.poeticswam.minusmod.block.ModBlocks;
 import net.poeticswam.minusmod.effect.ModEffects;
 import net.poeticswam.minusmod.item.ModItems;
 import net.poeticswam.minusmod.potion.ModPotions;
@@ -20,6 +21,7 @@ public class MinusMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModBlocks.registerModBlocks();
         ModItems.registerModItems();
         ModEffects.registerEffects();
         ModPotions.registerPotions();
