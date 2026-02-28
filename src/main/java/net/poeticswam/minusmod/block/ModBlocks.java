@@ -23,7 +23,7 @@ public class ModBlocks {
     public static final Block SUGAR_BLOCK = registerFallingBlock("sugar_block", AbstractBlock.Settings.create().mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND));
 
     // --- Normal Blocks ---
-    public static final Block CANDY_BLOCK = registerBlock("candy_block", AbstractBlock.Settings.create().mapColor(MapColor.PINK).instrument(NoteBlockInstrument.BASS).strength(1.5F).sounds(BlockSoundGroup.WOOL));
+    public static final Block EXAMPLE_BLOCK = registerBlock("example_block", AbstractBlock.Settings.create().mapColor(MapColor.PINK).instrument(NoteBlockInstrument.BASS).strength(1.5F).sounds(BlockSoundGroup.WOOL));
 
 
 
@@ -74,7 +74,7 @@ public class ModBlocks {
     public static void registerModBlocks() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(SUGAR_BLOCK);
-            entries.add(CANDY_BLOCK);
+            entries.add(EXAMPLE_BLOCK);
         });
     }
 }
