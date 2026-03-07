@@ -1,6 +1,6 @@
 {
   "model": {
     "type" : "minecraft:model",
-    "model": "minusmod:item/water_melon_drink"
+    "model": "minusmod:item/melon_juice"
   }
 }

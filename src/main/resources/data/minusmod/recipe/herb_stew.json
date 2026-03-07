@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    "minecraft:bowl",
+    "#minusmod:herbs",
+    "#minusmod:herbs",
+    "#minusmod:herbs"
+],
+  "result": {
+    "count": 1,
+    "id": "minusmod:herb_stew"
+  }
+}

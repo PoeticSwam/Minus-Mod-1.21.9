@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minusmod:item/water_melon_drink"
+    "layer0": "minusmod:item/melon_juice"
   }
 }
