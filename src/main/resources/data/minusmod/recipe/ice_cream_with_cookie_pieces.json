@@ -5,11 +5,10 @@
   "ingredients": [
     "minecraft:snowball",
     "minecraft:stick",
-    "minecraft:gunpowder",
-    "minecraft:lime_dye"
+    "minecraft:cookie"
 ],
   "result": {
     "count": 1,
-    "id": "minusmod:creeper_crunch_ice_cream"
+    "id": "minusmod:ice_cream_with_cookie_pieces"
   }
 }

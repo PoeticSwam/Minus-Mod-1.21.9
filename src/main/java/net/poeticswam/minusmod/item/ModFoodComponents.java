@@ -18,4 +18,7 @@ public class ModFoodComponents {
     public static final FoodComponent MELON_JUICE = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F).alwaysEdible().build();
     public static final FoodComponent SLIME_BALL_STEW = new FoodComponent.Builder().nutrition(3).saturationModifier(0.6F).build();
     public static final FoodComponent HERB_STEW = new FoodComponent.Builder().nutrition(3).saturationModifier(0.6F).build();
+    public static final FoodComponent ICE_CREAM_WITH_COOKIE_PIECES = new FoodComponent.Builder().nutrition(3).saturationModifier(0.1F).build();
+    public static final FoodComponent ICE_CREAM_WITH_BITS_OF_CAKE = new FoodComponent.Builder().nutrition(3).saturationModifier(0.1F).build();
+    public static final FoodComponent FERMENTED_MELON_JUICE = new FoodComponent.Builder().nutrition(2).saturationModifier(0.3F).alwaysEdible().build();
 }

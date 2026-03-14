@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "food",
-  "group": "diamond_ore_chunk_ice_cream",
+  "group": "ice_cream",
   "ingredients": [
     "minecraft:snowball",
     "minecraft:stick",

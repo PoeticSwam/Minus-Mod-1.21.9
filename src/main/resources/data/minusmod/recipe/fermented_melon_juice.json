@@ -3,10 +3,11 @@
   "category": "food",
   "ingredients": [
     "minecraft:glass_bottle",
-    "minecraft:melon_slice"
+    "minecraft:melon_slice",
+    "minecraft:fermented_spider_eye"
 ],
   "result": {
     "count": 1,
-    "id": "minusmod:melon_juice"
+    "id": "minusmod:fermented_melon_juice"
   }
 }

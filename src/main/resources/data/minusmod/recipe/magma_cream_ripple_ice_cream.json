@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "food",
-  "group": "magma_cream_ripple_ice_cream",
+  "group": "ice_cream",
   "ingredients": [
     "minecraft:snowball",
     "minecraft:stick",

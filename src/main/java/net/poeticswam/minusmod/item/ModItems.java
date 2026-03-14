@@ -29,6 +29,9 @@ public class ModItems {
     public static final Item MELON_JUICE = registerItem("melon_juice", new CustomDrinkItem(new Item.Settings().food(ModFoodComponents.MELON_JUICE, ModConsumableComponents.MELON_JUICE).maxCount(16).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"melon_juice")))));
     public static final Item SLIME_BALL_STEW = registerItem("slime_ball_stew", new CustomStewItem(new Item.Settings().maxCount(1).food(ModFoodComponents.SLIME_BALL_STEW).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"slime_ball_stew")))));
     public static final Item HERB_STEW = registerItem("herb_stew", new CustomStewItem(new Item.Settings().maxCount(1).food(ModFoodComponents.HERB_STEW).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"herb_stew")))));
+    public static final Item ICE_CREAM_WITH_COOKIE_PIECES = registerItem("ice_cream_with_cookie_pieces", new CustomIceCreamItem(new Item.Settings().food(ModFoodComponents.ICE_CREAM_WITH_COOKIE_PIECES).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"ice_cream_with_cookie_pieces")))));
+    public static final Item ICE_CREAM_WITH_BITS_OF_CAKE = registerItem("ice_cream_with_bits_of_cake", new CustomIceCreamItem(new Item.Settings().food(ModFoodComponents.ICE_CREAM_WITH_BITS_OF_CAKE).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"ice_cream_with_bits_of_cake")))));
+    public static final Item FERMENTED_MELON_JUICE = registerItem("fermented_melon_juice", new CustomDrinkItem(new Item.Settings().food(ModFoodComponents.FERMENTED_MELON_JUICE, ModConsumableComponents.FERMENTED_MELON_JUICE).maxCount(16).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"fermented_melon_juice")))));
 
     public static final Item SPIDER_LEG = registerItem("spider_leg", new Item(new Item.Settings().food(ModFoodComponents.SPIDER_LEG).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"spider_leg")))));
     public static final Item COOKED_SPIDER_LEG = registerItem("cooked_spider_leg", new Item(new Item.Settings().food(ModFoodComponents.COOKED_SPIDER_LEG).registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MinusMod.MOD_ID,"cooked_spider_leg")))));
@@ -76,6 +79,9 @@ public class ModItems {
             entries.add(MELON_JUICE);
             entries.add(SLIME_BALL_STEW);
             entries.add(HERB_STEW);
+            entries.add(ICE_CREAM_WITH_COOKIE_PIECES);
+            entries.add(ICE_CREAM_WITH_BITS_OF_CAKE);
+            entries.add(FERMENTED_MELON_JUICE);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {

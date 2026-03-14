@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "food",
-  "group": "ghast_tear_swirl_ice_cream",
+  "group": "ice_cream",
   "ingredients": [
     "minecraft:snowball",
     "minecraft:stick",
