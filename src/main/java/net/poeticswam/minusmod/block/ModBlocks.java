@@ -24,7 +24,14 @@ public class ModBlocks {
 
     // --- Normal Blocks ---
     public static final Block EXAMPLE_BLOCK = registerBlock("example_block", AbstractBlock.Settings.create().mapColor(MapColor.PINK).instrument(NoteBlockInstrument.BASS).strength(1.5F).sounds(BlockSoundGroup.WOOL));
-
+    public static final Block PRESENT_BARREL = registerBarrelBlock(
+            "present_barrel",
+            AbstractBlock.Settings.create()
+                    .mapColor(MapColor.PINK)
+                    .instrument(NoteBlockInstrument.BASS)
+                    .strength(2.5F)
+                    .sounds(BlockSoundGroup.WOOD)
+    );
 
 
     private static Block registerBlock(String name, AbstractBlock.Settings settings) {
@@ -58,6 +65,15 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, blockKey, block);
     }
 
+    private static Block registerBarrelBlock(String name, AbstractBlock.Settings settings) {
+        Identifier id = Identifier.of(MinusMod.MOD_ID, name);
+        RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, id);
+
+        BarrelBlock block = new BarrelBlock(settings.registryKey(blockKey));
+        registerBlockItem(name, block);
+
+        return Registry.register(Registries.BLOCK, blockKey, block);
+    }
 
     private static void registerBlockItem(String name, Block block) {
         Identifier id = Identifier.of(MinusMod.MOD_ID, name);
@@ -75,6 +91,7 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(SUGAR_BLOCK);
             entries.add(EXAMPLE_BLOCK);
+            entries.add(PRESENT_BARREL);
         });
     }
 }
