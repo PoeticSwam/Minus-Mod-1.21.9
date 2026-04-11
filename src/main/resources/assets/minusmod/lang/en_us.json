@@ -49,5 +49,7 @@
   "item.minecraft.tipped_arrow.effect.rocket_potion": "Arrow of Rocket",
   "effect.minusmod.rocket": "Rocket",
 
-  "item.minusmod.sugar_block": "Sugar Block"
+  "item.minusmod.sugar_block": "Sugar Block",
+
+  "item.minusmod.present_empty": "Empty Present"
 }

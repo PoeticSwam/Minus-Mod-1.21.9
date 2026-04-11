@@ -23,7 +23,8 @@ public class ModBlocks {
     public static final Block SUGAR_BLOCK = registerFallingBlock("sugar_block", AbstractBlock.Settings.create().mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND));
 
     // --- Normal Blocks ---
-    public static final Block PRESENT_EMPTY = registerBlock("present_empty", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL));
+    public static final Block PRESENT_EMPTY = registerBlock("present_empty", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque());
+    public static final Block PRESENT = registerBlock("present", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque());
     public static final Block EXAMPLE_BLOCK = registerBlock("example_block", AbstractBlock.Settings.create().mapColor(MapColor.PINK).instrument(NoteBlockInstrument.BASS).strength(1.5F).sounds(BlockSoundGroup.WOOL));
 
     private static Block registerBlock(String name, AbstractBlock.Settings settings) {
@@ -75,6 +76,7 @@ public class ModBlocks {
             entries.add(SUGAR_BLOCK);
             entries.add(EXAMPLE_BLOCK);
             entries.add(PRESENT_EMPTY);
+            entries.add(PRESENT);
         });
     }
 }
