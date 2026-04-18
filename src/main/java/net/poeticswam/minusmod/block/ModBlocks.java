@@ -16,16 +16,22 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import net.poeticswam.minusmod.MinusMod;
+import net.poeticswam.minusmod.block.custom.CustomEmptyPresentBlock;
+import net.poeticswam.minusmod.block.custom.CustomPresentBlock;
+import java.util.function.Function;
 
 public class ModBlocks {
 
     // --- Gravity Blocks ---
     public static final Block SUGAR_BLOCK = registerFallingBlock("sugar_block", AbstractBlock.Settings.create().mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND));
 
+    // --- Custom Blocks ---
+    public static final Block PRESENT = registerCustomBlock("present", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_EMPTY = registerCustomBlock("present_empty", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomEmptyPresentBlock::new);
+
     // --- Normal Blocks ---
-    public static final Block PRESENT_EMPTY = registerBlock("present_empty", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque());
-    public static final Block PRESENT = registerBlock("present", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque());
     public static final Block EXAMPLE_BLOCK = registerBlock("example_block", AbstractBlock.Settings.create().mapColor(MapColor.PINK).instrument(NoteBlockInstrument.BASS).strength(1.5F).sounds(BlockSoundGroup.WOOL));
+
 
     private static Block registerBlock(String name, AbstractBlock.Settings settings) {
         Identifier id = Identifier.of(MinusMod.MOD_ID, name);
@@ -37,6 +43,15 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, blockKey, block);
     }
 
+    private static Block registerCustomBlock(String name, AbstractBlock.Settings settings, Function<AbstractBlock.Settings, Block> factory) {
+        Identifier id = Identifier.of(MinusMod.MOD_ID, name);
+        RegistryKey<Block> blockKey = RegistryKey.of(RegistryKeys.BLOCK, id);
+
+        Block block = factory.apply(settings.registryKey(blockKey));
+        registerBlockItem(name, block);
+
+        return Registry.register(Registries.BLOCK, blockKey, block);
+    }
 
     private static Block registerFallingBlock(String name, AbstractBlock.Settings settings) {
         Identifier id = Identifier.of(MinusMod.MOD_ID, name);
