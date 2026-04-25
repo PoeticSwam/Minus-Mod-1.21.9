@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [24, 24],
 	"textures": {
-		"0": "minusmod:block/present",
-		"particle": "minusmod:block/present"
+		"0": "minusmod:block/present_blue",
+		"particle": "minusmod:block/present_blue"
 	},
 	"elements": [
 		{

@@ -3,8 +3,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [24, 24],
 	"textures": {
-		"0": "minusmod:block/present",
-		"particle": "minusmod:block/present"
+		"0": "minusmod:block/present_blue",
+		"particle": "minusmod:block/present_blue"
 	},
 	"elements": [
 		{
@@ -30,7 +30,7 @@
 				"south": {"uv": [0, 0, 8, 2], "texture": "#0"},
 				"west": {"uv": [0, 0, 8, 2], "texture": "#0"},
 				"up": {"uv": [8, 0, 16, 8], "texture": "#0"},
-				"down": {"uv": [8, 0, 16, 8], "texture": "#0"}
+				"down": {"uv": [8, 8, 16, 16], "texture": "#0"}
 			}
 		}
 	],

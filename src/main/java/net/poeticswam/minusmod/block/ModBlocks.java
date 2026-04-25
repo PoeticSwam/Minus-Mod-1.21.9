@@ -26,8 +26,20 @@ public class ModBlocks {
     public static final Block SUGAR_BLOCK = registerFallingBlock("sugar_block", AbstractBlock.Settings.create().mapColor(MapColor.WHITE).instrument(NoteBlockInstrument.SNARE).strength(0.5F).sounds(BlockSoundGroup.SAND));
 
     // --- Custom Blocks ---
-    public static final Block PRESENT = registerCustomBlock("present", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
-    public static final Block PRESENT_EMPTY = registerCustomBlock("present_empty", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomEmptyPresentBlock::new);
+    public static final Block PRESENT_IRON_INGOT = registerCustomBlock("present_iron_ingot", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_IRON_NUGGET = registerCustomBlock("present_iron_nugget", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_GOLD_INGOT = registerCustomBlock("present_gold_ingot", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_GOLD_NUGGET = registerCustomBlock("present_gold_nugget", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_COPPER_INGOT = registerCustomBlock("present_copper_ingot", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_COPPER_NUGGET = registerCustomBlock("present_copper_nugget", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_NETHERITE_INGOT = registerCustomBlock("present_netherite_ingot", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_NETHERITE_SCRAP = registerCustomBlock("present_netherite_scrap", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_LAPIS_LAZULI = registerCustomBlock("present_lapis_lazuli", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_EMERALD = registerCustomBlock("present_emerald", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_DIAMOND = registerCustomBlock("present_diamond", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_AMETHYST_SHARD = registerCustomBlock("present_amethyst_shard", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_ECHO_SHARD = registerCustomBlock("present_echo_shard", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomPresentBlock::new);
+    public static final Block PRESENT_BLUE_EMPTY = registerCustomBlock("present_blue_empty", AbstractBlock.Settings.create().mapColor(MapColor.BLUE).strength(1F).sounds(BlockSoundGroup.WOOL).nonOpaque(), CustomEmptyPresentBlock::new);
 
     // --- Normal Blocks ---
     public static final Block EXAMPLE_BLOCK = registerBlock("example_block", AbstractBlock.Settings.create().mapColor(MapColor.PINK).instrument(NoteBlockInstrument.BASS).strength(1.5F).sounds(BlockSoundGroup.WOOL));
@@ -90,8 +102,20 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(SUGAR_BLOCK);
             entries.add(EXAMPLE_BLOCK);
-            entries.add(PRESENT_EMPTY);
-            entries.add(PRESENT);
+            entries.add(PRESENT_BLUE_EMPTY);
+            entries.add(PRESENT_IRON_INGOT);
+            entries.add(PRESENT_IRON_NUGGET);
+            entries.add(PRESENT_GOLD_INGOT);
+            entries.add(PRESENT_GOLD_NUGGET);
+            entries.add(PRESENT_COPPER_INGOT);
+            entries.add(PRESENT_COPPER_NUGGET);
+            entries.add(PRESENT_NETHERITE_INGOT);
+            entries.add(PRESENT_NETHERITE_SCRAP);
+            entries.add(PRESENT_LAPIS_LAZULI);
+            entries.add(PRESENT_EMERALD);
+            entries.add(PRESENT_DIAMOND);
+            entries.add(PRESENT_AMETHYST_SHARD);
+            entries.add(PRESENT_ECHO_SHARD);
         });
     }
 }

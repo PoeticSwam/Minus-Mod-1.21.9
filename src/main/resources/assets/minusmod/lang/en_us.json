@@ -51,5 +51,6 @@
 
   "item.minusmod.sugar_block": "Sugar Block",
 
-  "item.minusmod.present_empty": "Empty Present"
+  "item.minusmod.present_blue_empty": "Empty Blue Present",
+  "item.minusmod.present_diamond": "Blue Present"
 }
