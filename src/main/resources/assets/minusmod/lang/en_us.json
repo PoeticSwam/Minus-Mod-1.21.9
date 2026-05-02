@@ -51,6 +51,21 @@
 
   "item.minusmod.sugar_block": "Sugar Block",
 
+  "item.minusmod.present_lapis_lazuli": "Blue Present",
+  "item.minusmod.present_emerald": "Blue Present",
+  "item.minusmod.present_diamond": "Blue Present",
+  "item.minusmod.present_iron_ingot": "Red Present",
+  "item.minusmod.present_gold_ingot": "Red Present",
+  "item.minusmod.present_copper_ingot": "Red Present",
+  "item.minusmod.present_netherite_ingot": "Red Present",
+  "item.minusmod.present_iron_nugget": "Green Present",
+  "item.minusmod.present_gold_nugget": "Green Present",
+  "item.minusmod.present_copper_nugget": "Green Present",
+  "item.minusmod.present_netherite_scrap": "Green Present",
+  "item.minusmod.present_amethyst_shard": "Pink Present",
+  "item.minusmod.present_echo_shard": "Pink Present",
   "item.minusmod.present_blue_empty": "Empty Blue Present",
-  "item.minusmod.present_diamond": "Blue Present"
+  "item.minusmod.present_red_empty": "Empty Red Present",
+  "item.minusmod.present_green_empty": "Empty Green Present",
+  "item.minusmod.present_pink_empty": "Empty Pink Present"
 }
