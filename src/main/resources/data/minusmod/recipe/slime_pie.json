@@ -4,7 +4,7 @@
   "ingredients": [
     "minecraft:slime_ball",
     "minecraft:sugar",
-    "#minusmod:all_eggs"
+    "#minecraft:eggs"
   ],
   "result": {
     "count": 1,

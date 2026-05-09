@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minusmod:coarse_dirt_stew",
+    "minusmod:grass_stew",
+    "minusmod:herb_stew",
+    "minusmod:mud_soup",
+    "minusmod:slime_ball_stew"
+  ]
+}
