@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "present",
+  "ingredients": [
+    "minecraft:amethyst_shard",
+    "minusmod:present_pink_empty"
+],
+  "result": {
+    "count": 1,
+    "id": "minusmod:present_amethyst_shard"
+  }
+}

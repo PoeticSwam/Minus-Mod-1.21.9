@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "present",
+  "ingredients": [
+    "minecraft:iron_ingot",
+    "minusmod:present_red_empty"
+],
+  "result": {
+    "count": 1,
+    "id": "minusmod:present_iron_ingot"
+  }
+}

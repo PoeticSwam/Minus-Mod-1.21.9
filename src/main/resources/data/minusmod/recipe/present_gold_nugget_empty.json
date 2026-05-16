@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "present",
+  "ingredients": [
+    "minecraft:gold_nugget",
+    "minusmod:present_green_empty"
+],
+  "result": {
+    "count": 1,
+    "id": "minusmod:present_gold_nugget"
+  }
+}

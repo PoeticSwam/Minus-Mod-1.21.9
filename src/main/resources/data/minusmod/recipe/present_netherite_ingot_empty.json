@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "present",
+  "ingredients": [
+    "minecraft:netherite_ingot",
+    "minusmod:present_red_empty"
+],
+  "result": {
+    "count": 1,
+    "id": "minusmod:present_netherite_ingot"
+  }
+}
