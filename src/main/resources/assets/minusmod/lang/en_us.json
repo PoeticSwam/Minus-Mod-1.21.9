@@ -48,6 +48,11 @@
   "item.minecraft.lingering_potion.effect.rocket_potion": "Lingering Potion of Rocket",
   "item.minecraft.tipped_arrow.effect.rocket_potion": "Arrow of Rocket",
   "effect.minusmod.rocket": "Rocket",
+  "item.minecraft.potion.effect.stoneskin_potion": "Potion of Stoneskin",
+  "item.minecraft.splash_potion.effect.stoneskin_potion": "Splash Potion of Stoneskin",
+  "item.minecraft.lingering_potion.effect.stoneskin_potion": "Lingering Potion of Stoneskin",
+  "item.minecraft.tipped_arrow.effect.stoneskin_potion": "Arrow of Stoneskin",
+  "effect.minusmod.stoneskin": "Stoneskin",
 
   "item.minusmod.sugar_block": "Sugar Block",
 
